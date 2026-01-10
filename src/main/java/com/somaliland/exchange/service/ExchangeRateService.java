@@ -25,6 +25,12 @@ public class ExchangeRateService {
         this.restTemplate = restTemplate;
         this.listableBeanFactory = listableBeanFactory;
     }
+    public BigDecimal convert(String currencyCode, BigDecimal amount) {
+        ExchangeRate rateEntry = incomingrepo.findByCurrencyCode(currencyCode)
+                .orElseThrow(() -> new RuntimeException("Currency not found"));
+
+        return amount.multiply(rateEntry.getRate());
+    }
 
     public ExchangeRate updateRate(String currencyCode, BigDecimal rate) {
       ExchangeRate entry = new ExchangeRate();
