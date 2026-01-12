@@ -11,7 +11,9 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
 
 A secure, open-source RESTful microservice that provides the first-ever algorithmic bridge between the **Somaliland Shilling (SLSH)** and global currencies.
-
+## 🚀 Live Demo & Documentation
+* **Developer Portal (Frontend):** [https://docs.dhawr.com](https://docs.dhawr.com)
+* **API Endpoint (Backend):** [https://api.dhawr.com/api/rates/all](https://api.dhawr.com/api/rates/all)
 ---
 
 ## 🚀 The Problem
